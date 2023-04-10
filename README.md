@@ -1,17 +1,31 @@
 # Sentiment Analysis Application
 
-A simple Node.js application that takes a user's text input and performs sentiment analysis using the `sentiment` package. The application categorizes the input as positive, negative, or neutral and provides a confidence score for the predicted sentiment.
+A simple Node.js application that takes a user's text input and performs sentiment analysis using the sentiment package. The application categorizes the input as positive, negative, or neutral and provides a confidence score for the predicted sentiment.
 
 ## Features
 
 - Simple web page with an input form for users to submit text
 - Display sentiment analysis results (sentiment category and confidence score) on the page after the analysis is complete
 - RESTful API using Express.js to handle user input and perform sentiment analysis
-- Use of the `sentiment` package for sentiment analysis
+- Use of the sentiment package for sentiment analysis
+- Code deployed and working on vercel (https://sentiment-analysis-beta.vercel.app/)
+
+## Project Structure
+
+```
+project-folder/
+├── api/
+│   └── sentiment.js
+├── public/
+│   └── index.html
+├── node_modules/
+├── package.json
+└── vercel.json
+```
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/en/download/) installed
+- Node.js installed
 
 ## Installation
 
@@ -35,18 +49,26 @@ npm install
 
 ## Usage
 
-1. Start the server:
+### Local Development
+
+To run the application locally, you'll need to have the Vercel CLI installed:
 
 ```bash
-node server.js
+npm install -g vercel
 ```
 
-2. Open the `index.html` file in your browser.
+Start the development server:
 
-3. Enter text in the input field and click "Analyze" to see the sentiment analysis results.
+```bash
+vercel dev
+```
 
-## License
+Open your browser and navigate to `http://localhost:3000` to view the application.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### Vercel webpage
 
----
+To test the deployed application on Vercel, visit:
+
+https://sentiment-analysis-beta.vercel.app/
+
+...
