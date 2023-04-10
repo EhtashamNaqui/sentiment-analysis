@@ -18,7 +18,7 @@ A simple Node.js application that takes a user's text input and performs sentime
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/sentiment-analysis.git
+git clone https://github.com/EhtashamNaqui/sentiment-analysis.git
 ```
 
 2. Change directory to the project folder:
