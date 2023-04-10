@@ -25,13 +25,13 @@
       e.preventDefault();
 
       const userInput = document.getElementById("user-input").value;
-      const response = await fetch("http://localhost:3000/sentiment", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ userInput }),
-      });
+      const response = await fetch("/api/sentiment", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ userInput }),
+});
 
       const data = await response.json();
       const resultElement = document.getElementById("result");
